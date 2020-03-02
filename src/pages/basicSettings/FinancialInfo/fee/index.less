@@ -1,0 +1,36 @@
+//@import '~antd/es/style/themes/default.less';
+
+.main {
+  width: 100%;
+}
+
+.feeWarp{
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.treeLeft{
+  position: relative;
+  width: 294px;
+  padding: 16px;
+  box-sizing: border-box;
+  &:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    border-right: 1px solid rgba(0,0,0,0.06);;
+  }
+}
+.tableMain{
+  flex: 1;
+}
+
+.treeNode{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  color: rgba(0,0,0,0.45);
+}
