@@ -151,9 +151,9 @@ const config: IConfig = {
               level: '1',
               routes: [
                 {
-                  name: '空白页面',
-                  path: '/groupcontrol/index',
-                  component: './GroupControl',
+                  name: '品牌库管理',
+                  path: '/groupcontrol/BrandLibrary',
+                  component: './GroupControl/BrandLibrary',
                 },
               ],
             },
@@ -203,6 +203,5 @@ const config: IConfig = {
   ],
   ignoreMomentLocale: true,
   disableRedirectHoist: true,
-  history: 'hash',
 };
 export default config;

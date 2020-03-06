@@ -8,16 +8,13 @@ import ProLayout, {
 import Link from 'umi/link';
 import router from 'umi/router';
 import { Dispatch } from 'redux';
-import { Tabs, Menu, Dropdown, Button } from 'antd';
-import { DownOutlined, DoubleLeftOutlined } from '@ant-design/icons'
+import { Tabs, Menu, Dropdown } from 'antd';
 
 import RightContent from '@/components/GlobalHeader/RightContent';
 import defaultSettings from '../../config/defaultSettings';
-import { ClickParam, SelectParam } from 'antd/lib/menu';
+import { ClickParam } from 'antd/lib/menu';
 
 import styles from './index.less'
-import { Route } from 'react-router';
-import { TabsProps } from 'antd/lib/tabs';
 
 
 const { TabPane } = Tabs;
@@ -99,13 +96,7 @@ const PrimaryLayout: React.FC<BasicLayoutProps> = props => {
       setPages([...pages, ...currPages]);
       setPathList([...fullPathList, pathname]);
     }
-  }, [location]);
-
-
-  // console.log(fullPathList)
-  // console.log(pages)
-  // console.log(activeKey);
-
+  }, [activeKey, fullPathList, location, pages, pathname, tabLists]);
 
   /**删除*/
   const removeHandle = (targetKey: string | React.MouseEvent<HTMLElement>) => {

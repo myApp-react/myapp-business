@@ -54,6 +54,7 @@ export default {
   colorWeak: false,
   menu: {
     locale: true,
+
   },
   title: '商管渠道版',
   pwa: false,
